@@ -30,6 +30,12 @@
     <ClInclude Include="log.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="gen_thumbnail.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="muxing.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -42,6 +48,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="log.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="gen_thumbnail.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="muxing.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
