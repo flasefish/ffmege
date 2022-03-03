@@ -74,8 +74,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>F:\ffmpeg-n4.3.2-160-gfbb9368226-win64-gpl-shared-4.3\include;$(IncludePath)</IncludePath>
-    <LibraryPath>F:\ffmpeg-n4.3.2-160-gfbb9368226-win64-gpl-shared-4.3\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>G:\ffmpeg-n4.3.2-160-gfbb9368226-win64-gpl-shared-4.3\include;$(IncludePath)</IncludePath>
+    <LibraryPath>G:\ffmpeg-n4.3.2-160-gfbb9368226-win64-gpl-shared-4.3\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -148,6 +148,8 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="czyplayer.h" />
+    <ClInclude Include="decode_video.h" />
     <ClInclude Include="dump_info.h" />
     <ClInclude Include="gen_thumbnail.h" />
     <ClInclude Include="log.h" />
@@ -156,6 +158,8 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="czyplayer.cpp" />
+    <ClCompile Include="decode_video.cpp" />
     <ClCompile Include="dump_info.cpp" />
     <ClCompile Include="ffmege.cpp" />
     <ClCompile Include="gen_thumbnail.cpp" />

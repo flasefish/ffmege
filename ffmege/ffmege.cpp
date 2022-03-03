@@ -8,6 +8,8 @@
 #include <stdio.h>
 #include "dump_info.h"
 #include "log.h"
+#include "decode_video.h"
+#include "czyplayer.h"
 
 #define __STDC_CONSTANT_MACROS
 #define SDL_MAIN_HANDLED
@@ -49,7 +51,7 @@ int readMp3Info() {
 int main()//删掉了输入
 {
 	//readMp3Info();
-	char *filename = "F:\\video.MP4";
+	/*char *filename = "F:\\video.MP4";
 	char *outfilename;
 	FILE *f;
 	uint8_t* data;
@@ -64,9 +66,9 @@ int main()//删掉了输入
 	}
 
 	data = (uint8_t*)malloc(INBUF_SIZE + AV_INPUT_BUFFER_PADDING_SIZE);
-	/* set end of buffer to 0 (this ensures that no overreading happens for damaged MPEG streams) */
+	// set end of buffer to 0 (this ensures that no overreading happens for damaged MPEG streams) 
 	memset(data + INBUF_SIZE, 0, AV_INPUT_BUFFER_PADDING_SIZE);
-	/* read raw data from the input file */
+	// read raw data from the input file 
 	data_size = fread(data, 1, INBUF_SIZE, f); // read 1 byte every time, ret = how many time, INBUF_SIZE = max time
 	if (!data_size)
 		exit(1);
@@ -75,4 +77,8 @@ int main()//删掉了输入
 
 	free(data);
 	fclose(f);
+	*/
+	//decode_main("F:\\video.MP4", "F:\\video2.MP4");
+
+	play_main();
 }
